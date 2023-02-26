@@ -1,3 +1,6 @@
+:root {
+  --vh: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:#fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {margin:0; padding:0; box-sizing: content-box !important;}
+li {list-style: none;}
+.App {padding:50px;}
+h2, h3 {margin-bottom: 50px;}
+
+
+.imageList ul{display: flex; width: 100%;}
+.imageList ul li{ display: flex; width:20%; justify-content: center; align-items: center; padding:1%;}
+.imageList ul li img {display: block; width: 100%; height: 100%; }
+
+
+.slider_wrapper{ position:fixed; top:0; left:0; width: 100vw; max-width:100%; height: calc(var(--vh, 1vh) * 100); overflow: hidden; background:rgba(0,0,0,0.7)}
+.slider_wrapper.close {display: none;}
+.slider_wrapper.open {display: block;}
+.slider_box {width: 100%; height: 100%; position: relative;}
+.slider_box ul { position:absolute; top:0; left:0; width: 20000px;}
+.slider_box ul li {display:block; float: left;}
+.slider_box ul li span {display: flex; width: 100vw; height: calc(var(--vh, 1vh) * 100); justify-content: center; align-items: center;}
+.slider_box ul li img{ max-width: calc(100% - 220px); max-height: 80%; }
+.slider_btn{ position: absolute; top:50%; width: 50px; height:50px; border-radius:50%; margin-top:-25px; border:none; font-size: 25px;}
+.slider_btn.disable {background:gray; color:#444}
+.slider_btn_prev{left:30px;}
+.slider_btn_next{right:30px}
+.slider_btn_close {top:30px; right:30px; margin-top: 0;}
