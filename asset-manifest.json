@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cat-image-slider/static/css/main.4e71e038.css",
+    "main.js": "/cat-image-slider/static/js/main.1fd5f4d6.js",
+    "index.html": "/cat-image-slider/index.html",
+    "main.4e71e038.css.map": "/cat-image-slider/static/css/main.4e71e038.css.map",
+    "main.1fd5f4d6.js.map": "/cat-image-slider/static/js/main.1fd5f4d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e71e038.css",
+    "static/js/main.1fd5f4d6.js"
+  ]
+}
